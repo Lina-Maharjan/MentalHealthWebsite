@@ -1,0 +1,555 @@
+/* General styles */
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.9em;
+}
+h2,h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #4CAF50; /* Green color for the header */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+
+    margin: 0;
+    
+    position: relative;
+    top: 60px; /* Add top margin to account for fixed navbar */
+}
+
+header img{
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: -106px 0px 0px 160px;
+}
+
+
+footer{
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 31px;
+    width: 100%;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.9em;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+
+/* Navigation bar styles */
+nav {
+    background-color: #f4f4f4; /* Dark background for the navbar */
+    overflow: hidden; /* Clear floats */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+    margin: 0; /* Removed any margin */
+    padding: 0; /* Removed any padding */
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    width: 100%;
+}
+
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: rgb(170, 64, 64);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #4CAF50; /*Highlight effect on hover */
+    /* color: #333; */
+}
+
+
+/* Active page link */
+/* nav ul li a.active {
+    background-color: #4CAF50;
+} */
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   
+    .Container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Home page CSS */
+* {
+    box-sizing: border-box; /* Apply border-box sizing globally */
+}
+
+
+#Section {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for About Us */
+    width: 100%; /* Set to full width */
+    margin-top: -3px; /* Remove margins */
+    padding: 0;
+}
+
+
+.about-us-section {
+    display: flex;          /*Use flexbox for alignment */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 20px;
+    border: 2px transparent #ccc;
+    /* border-radius: 5px; */
+    background-image: url(https://img.freepik.com/free-vector/watercolor-world-mental-health-day-background_23-2149637237.jpg); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: black; /* Ensure text is readable over the background image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px; /* Slightly larger text */
+    height: 400px; /* Set a specific height */
+    
+    margin: 0 auto;
+    width: 100%;
+}
+.about-us-section h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.about-us-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for Mission and Vision */
+    gap: 20px; /* Space between the columns */
+    margin-top: 20px;
+    /* background-color: #0077cc; */
+    width: 100%;
+}
+
+
+.about-us{
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px; /* Ensure Mission and Vision boxes have the same height */
+
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+/* Hover effect */
+.about-us:hover {
+    transform: translateX(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #0077cc; 
+    background-color: #d7e5f7; 
+}
+
+
+.about-us h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+#mental-health-videos{
+    margin-left: 20px;
+}
+#mental-health-videos p{
+    text-align: justify;
+    margin: 48px 29px 0px 360px;
+    position: absolute;
+
+
+}
+#mental-health-videos h2{
+    margin: 94px 0px 0px 0px;
+}
+
+
+/* Data on mental health */
+#mental-health-data {
+    border: none;
+    background-color: #d3ebf5;
+    /* border-radius: 8px; */
+    margin-top: 20px;
+    padding: 20px 20px 21px 20px;
+    text-align: center;
+}
+
+
+#main-div p {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 20px; /* Add space between the heading and the data boxes */
+}
+
+
+#main-div {
+    display: block; /* Ensure main-div does not affect Flexbox layout */
+}
+
+
+#main-div .data {
+    display: inline-flex; /* Flexbox for each data box */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Consistent width */
+    margin: 10px; /* Space around each box */
+    text-align: center;
+}
+
+/* Contact Us Page Styles */
+#contact-info {
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Positioning for the confirmation message */
+}
+
+
+
+#contact-info h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin: 66px 0px 0px 53px;
+}
+
+#contact-info p{
+    margin: 22px 0px 26px 8px;
+}
+
+
+#contact-form {
+    display: block;
+    box-sizing: border-box;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+}
+
+
+#contact-form label {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+#contact-form input, #contact-form textarea{
+    background-color: rgba(70, 76, 71, 0.3);
+    width: 100%;
+    font-size: 1em;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 9px;
+    padding: 0px 20px;
+    margin-bottom: 20px ;
+    box-sizing: border-box;
+
+}
+
+#contact-form button {
+    background-color: #4CAF50;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* font-size: 1em; */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+.confirmation-message {
+    display: none; /* Hidden by default */
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    padding: 10px;
+    border: 1px solid #c3e6cb; /* Green border */
+    border-radius: 5px;
+    margin-top: 15px; /* Space above the message */
+    text-align: center; /* Center the text */
+    position: absolute; /* Position it relative to the form */
+    width: 100%; /* Make it full width */
+    top: 100%; /* Position it below the form */
+    left: 0; /* Align to the left */
+}
+
+
+/* Video Guide Page Styles */
+.video-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+.video-item {
+    flex: 1 1 20%;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.video-title {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+   
+}
+
+.video-item:hover video {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Personal-stories Page Styles */
+body {
+    
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.story-form {
+    margin-bottom: 30px;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.story-list {
+    margin-top: 20px;
+}
+
+
+.story-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.story-list li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+
+.story-text {
+    margin: 0;
+    text-align: justify;
+}
+
+
+.full-text {
+    margin-top: 10px;
+}
+
+
+.read-more {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Added margin */
+    display: block; /* Ensure it takes full width */
+}
+
+
+.read-more:hover {
+    background-color: #45a049;
+}
+
+.delete-story {
+    margin: -26px 0px 0px 100px; /* Add space between Read More and Delete buttons */
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Home page story link section */
+.story-section {
+    background-color: #f0f4f8;
+    padding: 40px;
+    /* text-align: center; */
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 100%;
+    height: 354px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-people-relaxing-home_23-2148136253.jpg?t=st=1729493704~exp=1729497304~hmac=b02d9ad37e85c9863329e1b8d9552611470e4b81f6d4a9af8ad476f7bc0dbc00&w=740);
+    background-repeat: no-repeat;
+    background-size: 451px;
+    background-position: left;
+    background-color: #92e3ff;
+}
+
+.story-section h2 {
+    font-size: 2em;
+    margin: 11px 0px 27px 477px;
+    color: #333;
+    
+}
+
+.story-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0px 0px 43px 477px;
+    
+}
+
+.btn-share-story {
+    background-color: #339cc3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0px 2px 20px 699px;
+}
+
+.btn-share-story:hover {
+    background-color: #0589b7;
+}
+

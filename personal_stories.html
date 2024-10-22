@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="website.css">
+    <title>Personal Stories</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="videoguide.html" class="active">Video Guide</a></li>
+            <li><a href="personal_stories.html">Personal-stories | Blogs</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Share Your Personal Mental Health Story</h1>
+        <p>Your story can inspire and help others.</p>
+        <img src="images/telepathy.png" alt="">
+    </header>
+
+    <main>
+        <section class="story-form">
+            <h2>Submit Your Story</h2>
+            <textarea id="storyInput" placeholder="Write your story here..." rows="5"></textarea>
+            <input type="text" id="nameInput" placeholder="Your Name (optional)">
+            <button id="submitBtn">Submit</button>
+        </section>
+
+        <section class="story-list">
+            <h2>Stories</h2>
+            <ul id="storiesUl"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SerenitySpace. All rights reserved.</p>
+    </footer>
+    
+    <script src="website.js"></script>
+</body>
+</html>
